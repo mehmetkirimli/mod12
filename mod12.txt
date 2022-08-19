@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class mod12 {
+    public static void main(String[] args) {
+
+        int k, t = 0, a = 0, avg;
+
+        Scanner bjk = new Scanner(System.in);
+
+        System.out.println("Bir sayi gir  :");
+        k = bjk.nextInt();
+
+        for (int i = 0; i <= k; i++) {
+            if (i % 12 == 0) {
+                System.out.println(i);
+                t += i;
+                a++;
+            }
+        }
+        avg = t / a;
+        System.out.println("ortalama deger :" + avg);
+    }
+}
